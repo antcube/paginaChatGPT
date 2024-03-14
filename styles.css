@@ -1,0 +1,306 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Estilos Generales */
+body {
+    font-family: "Anta", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 4rem;
+}
+p, a, button {
+    font-size: 2rem;
+}
+
+/* Estilos del Header */
+.header {
+    background-color: #ffe4e1;
+    text-align: center;
+}
+.header__contenido {
+    padding: 60px 0;
+}
+@media (min-width: 768px) {
+    .header__contenido {
+        padding: 3rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.header__title {
+    color: #333333;
+    font-weight: 900;
+}
+@media (min-width: 768px) {
+    .header__title {
+        font-size: 4rem;
+    }
+}
+.nav {
+    margin-top: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+@media (min-width: 768px) {
+    .nav {
+        margin-top: 0;
+    }
+}
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width: 768px) {
+    .nav__list {
+        gap: 2rem;
+    }
+}
+.nav__item {
+    display: inline-block;
+}
+.nav__link {
+    text-decoration: none;
+    color: #666666;
+    transition: color 0.3s ease;
+}
+.nav__link:hover {
+    color: #ff7f50;
+}
+
+
+/* Estilos de Quienes Somos */
+.about-section__contenido {
+    padding: 6rem 0;
+    text-align: center;
+    color: #333333;;
+}
+@media (min-width: 768px) {
+    .about-section__contenido {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+.about-section__image {
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+
+/* Estilos de las Cards */
+.pet-list__title {
+    margin: 0;
+    color: #333333;
+    text-align: center;
+}
+.pet-list__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+@media (min-width: 768px) {
+    .pet-list__container {
+        flex-direction: row;
+    }
+}
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card__image {
+    width: 100%;
+    border-radius: 8px;
+}
+@media (min-width: 768px) {
+    .card__image {
+        max-height: 20rem;
+        object-fit: cover;
+    }
+}
+.card__content {
+    flex-grow: 1;
+}
+.card__title {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.card__description {
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.card__button {
+    background-color: #ffa07a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card__button:hover {
+    background-color: #ff7f50;
+}
+
+/* Media Queries */
+
+/* Estilos del Footer */
+.footer {
+    background-color: #ffe4e1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer__copyright {
+    margin: 0;
+    color: #666666;
+}
+
+/* Estilos de la Sección de Voluntariado */
+
+.volunteer-section {
+    background-color: #ffe4e1;
+    margin-top: 6rem;
+    padding: 6rem;
+    text-align: center;
+}
+
+.volunteer-section__title {
+    margin: 0;
+    color: #333333;
+}
+
+.volunteer-section__info {
+    margin-top: 20px;
+    color: #666666;
+}
+
+.volunteer-section__list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.volunteer-section__item {
+    font-size: 18px;
+    color: #444444;
+    margin-bottom: 10px;
+}
+
+.volunteer-section__contact {
+    margin-top: 20px;
+    color: #666666;
+}
+
+.volunteer-section__link {
+    color: #ff7f50;
+    text-decoration: none;
+}
+
+.volunteer-section__link:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de la Sección de Contacto */
+.contact-section {
+    padding: 40px;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .contact-section {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+.contact-section__title {
+    margin: 0;
+    color: #333333;
+}
+
+.contact-section__info {
+    margin-top: 20px;
+    color: #666666;
+}
+
+.contact-form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.contact-form__label {
+    display: block;
+    margin-bottom: 10px;
+    color: #444444;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form__textarea {
+    resize: none;
+}
+
+.contact-form__button {
+    background-color: #ff7f50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form__button:hover {
+    background-color: #ff6347;
+}

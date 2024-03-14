@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopción de Perros y Gatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8f6db5a445.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__contenido contenedor">
+            <h1 class="header__title"><i class="fa-solid fa-paw"></i> PATITAS</h1>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="#adoptar" class="nav__link">Adoptar</a></li>
+                    <li class="nav__item"><a href="#voluntariado" class="nav__link">Voluntarios</a></li>
+                    <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="quienes-somos" class="about-section">
+        <div class="about-section__contenido contenedor">
+            <div class="about-section__texto">
+                <h2 class="about-section__title">Quiénes Somos</h2>
+                <p class="about-section__description">Somos una organización comprometida con el bienestar animal. Nuestro objetivo es encontrar hogares amorosos para perros y gatos en situación de abandono y promover la adopción responsable.</p>
+            </div>
+            <div class="about-section__image">
+                <img src="img/nosotros.jpg" alt="Nosotros" class="about-section__image">
+            </div>
+        </div>
+    </section>
+    
+
+    <main class="main">
+        <section class="pet-list contenedor" id="adoptar">
+            <h2 class="pet-list__title">Perros Disponibles para Adopción</h2>
+            <div class="pet-list__container">
+                <div class="card">
+                    <img src="img/perro1.jpg" alt="Perro 1" class="card__image">
+                    <div class="card__content">
+                        <h3 class="card__title">Nombre del Perro 1</h3>
+                        <p class="card__description">Descripción del Perro 1.</p>
+                        <button class="card__button">Adoptar</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/perro2.jpg" alt="Perro 2" class="card__image">
+                    <div class="card__content">
+                        <h3 class="card__title">Nombre del Perro 2</h3>
+                        <p class="card__description">Descripción del Perro 2.</p>
+                        <button class="card__button">Adoptar</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/perro3.jpg" alt="Perro 3" class="card__image">
+                    <div class="card__content">
+                        <h3 class="card__title">Nombre del Perro 3</h3>
+                        <p class="card__description">Descripción del Perro 3.</p>
+                        <button class="card__button">Adoptar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="pet-list contenedor">
+            <h2 class="pet-list__title">Gatos Disponibles para Adopción</h2>
+            <div class="pet-list__container">
+                <div class="card">
+                    <img src="img/gato1.jpg" alt="Gato 1" class="card__image">
+                    <div class="card__content">
+                        <h3 class="card__title">Nombre del Gato 1</h3>
+                        <p class="card__description">Descripción del Gato 1.</p>
+                        <button class="card__button">Adoptar</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/gato2.jpg" alt="Gato 2" class="card__image">
+                    <div class="card__content">
+                        <h3 class="card__title">Nombre del Gato 2</h3>
+                        <p class="card__description">Descripción del Gato 2.</p>
+                        <button class="card__button">Adoptar</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/gato3.jpg" alt="Gato 3" class="card__image">
+                    <div class="card__content">
+                        <h3 class="card__title">Nombre del Gato 3</h3>
+                        <p class="card__description">Descripción del Gato 3.</p>
+                        <button class="card__button">Adoptar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="voluntariado" class="volunteer-section">
+        <h2 class="volunteer-section__title">Voluntariado</h2>
+        <p class="volunteer-section__info">Únete a nuestro equipo como voluntario y ayuda a cuidar y encontrar hogares para nuestras mascotas.</p>
+        <ul class="volunteer-section__list">
+            <li class="volunteer-section__item">Ayuda en el cuidado diario de los animales.</li>
+            <li class="volunteer-section__item">Participa en eventos de adopción.</li>
+            <li class="volunteer-section__item">Proporciona transporte para mascotas.</li>
+            <li class="volunteer-section__item">¡Y mucho más!</li>
+        </ul>
+        <p class="volunteer-section__contact">Si estás interesado en ser voluntario, contáctanos en <a href="mailto:voluntarios@adopcionmascotas.com" class="volunteer-section__link">voluntarios@adopcionmascotas.com</a>.</p>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <div class="contenedor">
+            <h2 class="contact-section__title">Contacto</h2>
+            <p class="contact-section__info">Ponte en contacto con nosotros para más información sobre cómo adoptar.</p>
+            <form class="contact-form">
+                <label for="nombre" class="contact-form__label">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="contact-form__input" required>
+        
+                <label for="email" class="contact-form__label">Correo electrónico:</label>
+                <input type="email" id="email" name="email" class="contact-form__input" required>
+        
+                <label for="mensaje" class="contact-form__label">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" class="contact-form__textarea" rows="4" required></textarea>
+        
+                <button type="submit" class="contact-form__button">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    
+
+    <footer class="footer">
+        <p class="footer__copyright">© 2024 Adopción de Perros y Gatos</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+
+</body>
+</html>
